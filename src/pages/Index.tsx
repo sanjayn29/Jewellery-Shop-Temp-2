@@ -5,7 +5,10 @@ import HeroSection from '@/components/HeroSection';
 import FeaturedCollections from '@/components/FeaturedCollections';
 import ProductShowcase from '@/components/ProductShowcase';
 import HeritageSection from '@/components/HeritageSection';
+import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
+import FloatingAssistant from '@/components/FloatingAssistant';
+import AnnouncementBanner from '@/components/AnnouncementBanner';
 
 // Import images
 import heroImage from '@/assets/hero-jewellery.jpg';
@@ -81,17 +84,20 @@ const Index = () => {
     <>
       {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
       
-      <div className={`min-h-screen bg-deep-black transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`min-h-screen bg-background transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+        <AnnouncementBanner />
         <Navbar />
         
         <main>
           <HeroSection heroImage={heroImage} />
           <FeaturedCollections collections={collections} />
           <ProductShowcase products={products} />
+          <Testimonials />
           <HeritageSection heritageImage={heritageCraftsman} />
         </main>
         
         <Footer />
+        <FloatingAssistant />
       </div>
     </>
   );

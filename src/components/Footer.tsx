@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import Logo from '../assets/Logo.png';
 
 const Footer = () => {
   const footerRef = useRef<HTMLElement>(null);
@@ -35,19 +36,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer ref={footerRef} className="relative bg-deep-black pt-24 pb-12 overflow-hidden">
+    <footer ref={footerRef} className="relative bg-gradient-to-b from-cream to-ivory pt-24 pb-12 overflow-hidden border-t border-gold/20">
       {/* Ornamental top border */}
       <div className="absolute top-0 left-0 right-0 h-px">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-center gap-4">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gold/30 to-gold/50" />
-            <svg viewBox="0 0 24 24" className="w-6 h-6 text-gold/50">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gold/50 to-gold/70" />
+            <svg viewBox="0 0 24 24" className="w-6 h-6 text-gold animate-twinkle">
               <path
                 fill="currentColor"
                 d="M12 2L14.59 9.41L22 12L14.59 14.59L12 22L9.41 14.59L2 12L9.41 9.41L12 2Z"
               />
             </svg>
-            <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gold/30 to-gold/50" />
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gold/50 to-gold/70" />
           </div>
         </div>
       </div>
@@ -62,26 +63,28 @@ const Footer = () => {
                 isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
-              <div className="flex flex-col items-start">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-8 h-8 mb-2 text-gold"
-                  fill="currentColor"
-                >
-                  <path d="M12 2L2 9l10 13 10-13L12 2zm0 3.84L18.26 9 12 18.54 5.74 9 12 5.84z" />
-                </svg>
-                <span className="font-display text-xl tracking-luxury text-foreground">
-                  MAISON ÉLÉGANCE
-                </span>
-                <span className="font-body text-xs tracking-widest text-muted-foreground mt-1">
-                  PARIS • LONDON • NEW YORK
-                </span>
+              <div className="flex items-center gap-4 group">
+                <div className="relative">
+                  <img
+                    src={Logo}
+                    alt="Meenakshi Jewellers"
+                    className="h-16 w-16 object-contain transition-all duration-500 group-hover:drop-shadow-[0_0_20px_rgba(212,175,55,0.6)]"
+                  />
+                  <div className="absolute inset-0 rounded-full border-2 border-gold/20 group-hover:scale-110 transition-all duration-500" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-display text-2xl tracking-wider text-foreground bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text group-hover:text-transparent transition-all duration-500">
+                    MEENAKSHI
+                  </span>
+                  <span className="font-body text-sm tracking-[0.3em] text-gold/80 -mt-1">
+                    JEWELLERS
+                  </span>
+                </div>
               </div>
             </div>
             <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-sm mb-8">
-              Creating timeless pieces of extraordinary beauty since 1892. 
-              Each creation reflects our commitment to excellence and our 
-              passion for the art of fine jewellery.
+              Crafting exquisite jewellery with traditional artistry and modern elegance. 
+              Each piece embodies our heritage of excellence and dedication to timeless beauty.
             </p>
             
             {/* Social Icons */}

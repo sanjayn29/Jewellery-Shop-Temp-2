@@ -6,63 +6,67 @@
 
 @layer base {
   :root {
-    /* Deep luxury dark theme */
-    --background: 0 0% 5%;
-    --foreground: 45 10% 96%;
+    /* Luxurious white-gold theme */
+    --background: 0 0% 98%;
+    --foreground: 30 5% 15%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 45 10% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 5% 15%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 45 10% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 5% 15%;
 
     /* Rich Gold */
-    --primary: 43 56% 47%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 43 80% 58%;
+    --primary-foreground: 0 0% 100%;
 
     /* Rose Gold */
-    --secondary: 350 30% 58%;
-    --secondary-foreground: 45 10% 96%;
+    --secondary: 350 45% 68%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Charcoal Muted */
-    --muted: 0 0% 12%;
-    --muted-foreground: 45 10% 65%;
+    /* Elegant Cream Muted */
+    --muted: 40 15% 94%;
+    --muted-foreground: 30 5% 45%;
 
     /* Platinum Accent */
-    --accent: 40 7% 90%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 210 15% 90%;
+    --accent-foreground: 30 5% 15%;
 
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 45 10% 96%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 43 30% 20%;
-    --input: 0 0% 15%;
-    --ring: 43 56% 47%;
+    --border: 43 25% 85%;
+    --input: 43 20% 92%;
+    --ring: 43 80% 58%;
 
     --radius: 0.25rem;
 
     /* Custom Luxury Colors */
-    --gold: 43 56% 47%;
-    --gold-light: 43 60% 60%;
-    --gold-dark: 43 50% 35%;
-    --rose-gold: 350 30% 58%;
-    --platinum: 40 7% 90%;
-    --diamond: 200 20% 95%;
-    --emerald: 145 60% 35%;
-    --sapphire: 220 70% 45%;
-    --ruby: 350 75% 45%;
-    --charcoal: 0 0% 8%;
-    --deep-black: 0 0% 5%;
+    --gold: 43 80% 58%;
+    --gold-light: 45 90% 75%;
+    --gold-dark: 40 70% 45%;
+    --rose-gold: 350 45% 68%;
+    --platinum: 210 15% 90%;
+    --silver: 210 10% 75%;
+    --diamond: 210 30% 97%;
+    --emerald: 145 50% 45%;
+    --sapphire: 220 70% 55%;
+    --ruby: 350 75% 55%;
+    --ivory: 40 20% 96%;
+    --cream: 40 30% 94%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43, 56%, 47%), hsl(43, 60%, 60%));
-    --gradient-shimmer: linear-gradient(90deg, transparent, hsl(43, 56%, 47% / 0.3), transparent);
-    --gradient-glass: linear-gradient(135deg, hsl(0, 0%, 100% / 0.05), hsl(0, 0%, 100% / 0.02));
+    --gradient-gold: linear-gradient(135deg, hsl(43, 80%, 58%), hsl(45, 90%, 75%));
+    --gradient-shimmer: linear-gradient(90deg, transparent, hsl(43, 80%, 58% / 0.5), transparent);
+    --gradient-glass: linear-gradient(135deg, hsl(0, 0%, 100% / 0.8), hsl(0, 0%, 100% / 0.5));
+    --gradient-white-gold: linear-gradient(135deg, hsl(0, 0%, 98%), hsl(43, 80%, 95%));
+    --gradient-silver: linear-gradient(135deg, hsl(210, 10%, 85%), hsl(210, 10%, 95%));
 
     /* Shadows */
-    --shadow-gold: 0 4px 30px hsl(43, 56%, 47% / 0.15);
-    --shadow-elegant: 0 8px 40px hsl(0, 0%, 0% / 0.4);
-    --shadow-glow: 0 0 60px hsl(43, 56%, 47% / 0.2);
+    --shadow-gold: 0 8px 40px hsl(43, 80%, 58% / 0.25);
+    --shadow-elegant: 0 12px 60px hsl(30, 5%, 15% / 0.15);
+    --shadow-glow: 0 0 80px hsl(43, 80%, 58% / 0.4);
+    --shadow-soft: 0 2px 20px hsl(30, 5%, 15% / 0.08);
 
     /* Typography */
     --font-display: 'Playfair Display', serif;
@@ -72,31 +76,31 @@
     --transition-elegant: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 45 10% 96%;
-    --sidebar-primary: 43 56% 47%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 45 10% 96%;
-    --sidebar-border: 43 30% 20%;
-    --sidebar-ring: 43 56% 47%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 30 5% 15%;
+    --sidebar-primary: 43 80% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 15% 94%;
+    --sidebar-accent-foreground: 30 5% 15%;
+    --sidebar-border: 43 25% 85%;
+    --sidebar-ring: 43 80% 58%;
   }
 
   .dark {
-    --background: 0 0% 5%;
-    --foreground: 45 10% 96%;
-    --card: 0 0% 8%;
-    --card-foreground: 45 10% 96%;
-    --popover: 0 0% 8%;
-    --popover-foreground: 45 10% 96%;
-    --primary: 43 56% 47%;
-    --primary-foreground: 0 0% 5%;
-    --secondary: 350 30% 58%;
-    --secondary-foreground: 45 10% 96%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 45 10% 65%;
-    --accent: 40 7% 90%;
-    --accent-foreground: 0 0% 5%;
+    --background: 30 8% 12%;
+    --foreground: 40 10% 95%;
+    --card: 30 8% 15%;
+    --card-foreground: 40 10% 95%;
+    --popover: 30 8% 15%;
+    --popover-foreground: 40 10% 95%;
+    --primary: 43 80% 58%;
+    --primary-foreground: 30 8% 12%;
+    --secondary: 350 45% 68%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 30 8% 20%;
+    --muted-foreground: 40 10% 70%;
+    --accent: 210 15% 25%;
+    --accent-foreground: 40 10% 95%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 45 10% 96%;
     --border: 43 30% 20%;
@@ -293,28 +297,145 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Logo Shimmer Effect */
+  @keyframes shimmer {
+    0% {
+      opacity: 0.3;
+      transform: translateX(-100%) rotate(-45deg);
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.3;
+      transform: translateX(200%) rotate(-45deg);
+    }
+  }
+
+  /* Logo Glow Pulse */
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(212, 175, 55, 0.3),
+                  0 0 10px rgba(212, 175, 55, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.6),
+                  0 0 30px rgba(212, 175, 55, 0.4),
+                  0 0 40px rgba(212, 175, 55, 0.2);
+    }
+  }
+
+  /* Float Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Rotate Gentle */
+  @keyframes rotate-gentle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Scale Pulse */
+  @keyframes scale-pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Fade In Animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--deep-black));
+  background: hsl(var(--cream));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--gold) / 0.3);
-  border-radius: 4px;
+  background: linear-gradient(180deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+  border-radius: 10px;
+  border: 2px solid hsl(var(--cream));
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--gold) / 0.5);
+  background: linear-gradient(180deg, hsl(var(--gold-light)), hsl(var(--gold)));
 }
 
 /* Selection Color */
 ::selection {
   background: hsl(var(--gold) / 0.3);
   color: hsl(var(--foreground));
+}
+
+/* Additional luxury animations */
+@keyframes liquid-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes diamond-shine {
+  0%, 100% { 
+    opacity: 0;
+    transform: translateX(-100%) rotate(45deg);
+  }
+  50% { 
+    opacity: 1;
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.liquid-gold-text {
+  background: linear-gradient(90deg, 
+    hsl(var(--gold-dark)),
+    hsl(var(--gold)),
+    hsl(var(--gold-light)),
+    hsl(var(--gold)),
+    hsl(var(--gold-dark))
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: liquid-shimmer 3s ease-in-out infinite;
+}
+
+.silver-text {
+  background: linear-gradient(90deg, 
+    hsl(var(--silver)),
+    hsl(var(--platinum)),
+    hsl(var(--diamond)),
+    hsl(var(--platinum)),
+    hsl(var(--silver))
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: liquid-shimmer 4s ease-in-out infinite;
 }
