@@ -102,10 +102,10 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
 
       {/* Brand name */}
       <div className="text-center mb-8 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-        <h1 className="font-display text-2xl tracking-luxury text-foreground">
+        <h1 className="font-display text-2xl tracking-luxury text-charcoal">
           MAISON ÉLÉGANCE
         </h1>
-        <p className="font-body text-sm tracking-widest text-muted-foreground mt-2">
+        <p className="font-body text-sm tracking-widest text-charcoal mt-2">
           HAUTE JOAILLERIE
         </p>
       </div>
@@ -119,7 +119,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       </div>
 
       {/* Progress text */}
-      <p className="mt-4 text-xs tracking-widest text-muted-foreground font-body animate-fade-in" style={{ animationDelay: '0.8s' }}>
+      <p className="mt-4 text-xs tracking-widest text-charcoal font-body animate-fade-in" style={{ animationDelay: '0.8s' }}>
         {progress}%
       </p>
     </div>

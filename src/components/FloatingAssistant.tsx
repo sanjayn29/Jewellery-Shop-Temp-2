@@ -14,8 +14,8 @@ const FloatingAssistant = () => {
           className="fixed bottom-8 right-8 z-50 bg-gradient-gold text-white p-4 rounded-full shadow-gold-lg hover:shadow-glow transition-all duration-500 hover:scale-110 group animate-fade-in"
         >
           <MessageCircle className="w-6 h-6 group-hover:animate-bounce" />
-          <div className="absolute -top-1 -right-1 w-3 h-3 bg-rose-gold rounded-full animate-glow-pulse" />
-          <div className="absolute inset-0 rounded-full border-2 border-gold-light/0 group-hover:border-gold-light/50 group-hover:scale-125 transition-all duration-500" />
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-amber rounded-full animate-glow-pulse" />
+          <div className="absolute inset-0 rounded-full border-2 border-gold-light/0 group-hover:border-gold-light/40 group-hover:scale-125 transition-all duration-500" />
         </button>
       )}
 
@@ -24,7 +24,7 @@ const FloatingAssistant = () => {
         <div className="fixed bottom-8 right-8 z-50 w-96 max-w-[calc(100vw-4rem)] bg-white rounded-2xl shadow-elegant border border-gold/20 overflow-hidden animate-scale-in">
           {/* Header */}
           <div className="bg-gradient-gold text-white p-4 flex items-center justify-between relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-gold-light/0 via-gold-light/20 to-gold-light/0 animate-shine" />
+            <div className="absolute inset-0 bg-gradient-to-r from-gold-light/0 via-gold-light/15 to-gold-light/0 animate-shine" />
             <div className="flex items-center gap-3 relative z-10">
               <div className="relative">
                 <Sparkles className="w-6 h-6 animate-twinkle" />
@@ -50,10 +50,10 @@ const FloatingAssistant = () => {
                 <Sparkles className="w-4 h-4 text-white" />
               </div>
               <div className="bg-white rounded-2xl rounded-tl-none p-3 shadow-soft border border-gold/10">
-                <p className="text-sm text-foreground font-body">
+                <p className="text-sm text-charcoal font-body">
                   Welcome to Meenakshi Jewellers! ✨
                 </p>
-                <p className="text-sm text-foreground font-body mt-2">
+                <p className="text-sm text-charcoal font-body mt-2">
                   I'm here to help you find the perfect piece. Are you looking for:
                 </p>
                 <div className="mt-3 space-y-2">
@@ -89,7 +89,7 @@ const FloatingAssistant = () => {
                 <Send className="w-4 h-4" />
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground text-center mt-2 font-body">
+            <p className="text-xs text-charcoal text-center mt-2 font-body">
               We typically reply within minutes
             </p>
           </div>

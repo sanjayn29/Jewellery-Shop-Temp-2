@@ -9,7 +9,7 @@ const AnnouncementBanner = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-gold via-gold-light to-gold text-white overflow-hidden">
+    <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-gold via-amber to-orange text-white overflow-hidden">
       <div className="relative py-3">
         {/* Animated shimmer overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine" />

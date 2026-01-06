@@ -1,80 +1,76 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Outer circle with gradient -->
-  <circle cx="64" cy="64" r="60" fill="url(#goldGradient)" opacity="0.1"/>
+  <!-- Outer decorative circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#goldGradient)" opacity="0.12"/>
   
-  <!-- Diamond shape -->
-  <path d="M64 20 L84 44 L64 88 L44 44 Z" fill="url(#goldGradient)" stroke="url(#goldStroke)" stroke-width="2"/>
+  <!-- Gold gemstone (topaz/citrine style) - more angular and realistic -->
+  <path d="M64 16 L80 38 L76 50 L64 82 L52 50 L48 38 Z" fill="url(#goldGradient)" stroke="url(#goldStroke)" stroke-width="2"/>
   
-  <!-- Diamond facets -->
-  <path d="M64 20 L74 44 L64 88 Z" fill="url(#goldLightGradient)" opacity="0.6"/>
-  <path d="M64 20 L54 44 L64 88 Z" fill="url(#goldDarkGradient)" opacity="0.4"/>
+  <!-- Gold facets for depth -->
+  <path d="M64 16 L72 38 L64 82 Z" fill="url(#goldLightGradient)" opacity="0.6"/>
+  <path d="M64 16 L56 38 L64 82 Z" fill="url(#amberGradient)" opacity="0.5"/>
+  <path d="M56 38 L52 50 L64 82 Z" fill="url(#amberGradient)" opacity="0.5"/>
+  <path d="M72 38 L76 50 L64 82 Z" fill="url(#goldLightGradient)" opacity="0.4"/>
   
-  <!-- Top facet lines -->
-  <line x1="64" y1="20" x2="64" y2="44" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.8"/>
-  <line x1="44" y1="44" x2="84" y2="44" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.8"/>
-  <line x1="44" y1="44" x2="64" y2="20" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.6"/>
-  <line x1="84" y1="44" x2="64" y2="20" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.6"/>
+  <!-- Internal facet lines -->
+  <line x1="64" y1="16" x2="64" y2="38" stroke="#B8860B" stroke-width="1" opacity="0.6"/>
+  <line x1="48" y1="38" x2="80" y2="38" stroke="#B8860B" stroke-width="1" opacity="0.6"/>
+  <line x1="52" y1="50" x2="76" y2="50" stroke="#DAA520" stroke-width="1" opacity="0.5"/>
+  <line x1="52" y1="50" x2="64" y2="82" stroke="#DAA520" stroke-width="1" opacity="0.5"/>
+  <line x1="76" y1="50" x2="64" y2="82" stroke="#DAA520" stroke-width="1" opacity="0.5"/>
   
-  <!-- Bottom facet lines -->
-  <line x1="64" y1="44" x2="64" y2="88" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.8"/>
-  <line x1="44" y1="44" x2="64" y2="88" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.6"/>
-  <line x1="84" y1="44" x2="64" y2="88" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.6"/>
+  <!-- Elegant highlights - golden shimmer -->
+  <circle cx="64" cy="16" r="2" fill="url(#highlightGradient)" opacity="0.9"/>
+  <circle cx="48" cy="38" r="1.5" fill="url(#highlightGradient)" opacity="0.7"/>
+  <circle cx="80" cy="38" r="1.5" fill="url(#highlightGradient)" opacity="0.7"/>
   
-  <!-- Sparkle effects -->
-  <circle cx="64" cy="20" r="3" fill="url(#sparkleGradient)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="44" cy="44" r="2" fill="url(#sparkleGradient)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="84" cy="44" r="2" fill="url(#sparkleGradient)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="64" cy="88" r="3" fill="url(#sparkleGradient)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1.5s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Letter M stylized as crown/jewel -->
-  <path d="M40 95 L48 108 L56 98 L64 108 L72 98 L80 108 L88 95" 
+  <!-- Letter M in art deco style below -->
+  <path d="M40 98 L46 112 L52 102 L58 112 L64 102 L70 112 L76 102 L82 112 L88 98" 
         stroke="url(#goldStroke)" 
-        stroke-width="3" 
+        stroke-width="2.5" 
         stroke-linecap="round" 
         stroke-linejoin="round" 
         fill="none"/>
   
-  <!-- Small diamonds on crown -->
-  <circle cx="48" cy="108" r="2" fill="url(#sparkleGradient)"/>
-  <circle cx="64" cy="108" r="2" fill="url(#sparkleGradient)"/>
-  <circle cx="80" cy="108" r="2" fill="url(#sparkleGradient)"/>
+  <!-- Small gold accents on crown -->
+  <circle cx="52" cy="102" r="2" fill="url(#goldGradient)"/>
+  <circle cx="64" cy="102" r="2" fill="url(#goldGradient)"/>
+  <circle cx="76" cy="102" r="2" fill="url(#goldGradient)"/>
+  
+  <!-- Art deco frame elements -->
+  <rect x="32" y="92" width="2" height="24" fill="url(#goldGradient)" opacity="0.5"/>
+  <rect x="94" y="92" width="2" height="24" fill="url(#goldGradient)" opacity="0.5"/>
   
   <!-- Gradients -->
   <defs>
+    <!-- Main gold gradient for gemstone -->
     <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#F4E5A0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B8992A;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
     </linearGradient>
     
+    <!-- Light gold gradient for highlights -->
     <linearGradient id="goldLightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#F4E5A0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
     </linearGradient>
     
-    <linearGradient id="goldDarkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#B8992A;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    <!-- Amber gradient for facets -->
+    <linearGradient id="amberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFBF00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
     </linearGradient>
     
-    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#F4E5A0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    <!-- Gold stroke gradient -->
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
     </linearGradient>
     
-    <radialGradient id="sparkleGradient">
+    <!-- Highlight gradient (bright shimmer) -->
+    <radialGradient id="highlightGradient">
       <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#F4E5A0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.6" />
     </radialGradient>
   </defs>
 </svg>

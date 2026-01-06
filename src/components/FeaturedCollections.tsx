@@ -59,7 +59,7 @@ const FeaturedCollections = ({ collections }: FeaturedCollectionsProps) => {
           <p className="font-body text-sm tracking-luxury text-gold mb-4">
             CURATED EXCELLENCE
           </p>
-          <h2 className="font-display text-3xl md:text-5xl text-foreground tracking-wide">
+          <h2 className="font-display text-3xl md:text-5xl text-charcoal tracking-wide">
             Featured Collections
           </h2>
         </div>
@@ -95,10 +95,10 @@ const FeaturedCollections = ({ collections }: FeaturedCollectionsProps) => {
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-end p-6 lg:p-8">
                   <div>
-                    <h3 className="font-display text-2xl lg:text-3xl text-foreground mb-2">
+                    <h3 className="font-display text-2xl lg:text-3xl text-charcoal mb-2">
                       {collection.name}
                     </h3>
-                    <p className="font-body text-sm text-muted-foreground mb-4 line-clamp-2">
+                    <p className="font-body text-sm text-charcoal mb-4 line-clamp-2">
                       {collection.description}
                     </p>
                     

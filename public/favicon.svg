@@ -1,21 +1,34 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Diamond shape -->
-  <path d="M16 4 L22 11 L16 24 L10 11 Z" fill="url(#goldGradient)" stroke="#D4AF37" stroke-width="1"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gold gemstone -->
+  <path d="M32 8 L40 19 L38 25 L32 41 L26 25 L24 19 Z" fill="url(#goldGradient)" stroke="url(#goldStroke)" stroke-width="1.5"/>
   
-  <!-- Diamond facets -->
-  <path d="M16 4 L19 11 L16 24 Z" fill="#F4E5A0" opacity="0.6"/>
-  <path d="M16 4 L13 11 L16 24 Z" fill="#B8992A" opacity="0.4"/>
+  <!-- Gold facets -->
+  <path d="M32 8 L36 19 L32 41 Z" fill="url(#goldLightGradient)" opacity="0.6"/>
+  <path d="M32 8 L28 19 L32 41 Z" fill="url(#amberGradient)" opacity="0.5"/>
   
-  <!-- Sparkle -->
-  <circle cx="16" cy="4" r="1.5" fill="#FFFFFF"/>
-  <circle cx="16" cy="24" r="1.5" fill="#FFFFFF"/>
+  <!-- Highlights -->
+  <circle cx="32" cy="8" r="1.5" fill="#FFFFFF" opacity="0.9"/>
   
   <!-- Gradients -->
   <defs>
     <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#F4E5A0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B8992A;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldLightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="amberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFBF00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
     </linearGradient>
   </defs>
 </svg>

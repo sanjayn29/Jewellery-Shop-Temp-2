@@ -50,7 +50,7 @@ const Testimonials = () => {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="py-20 bg-gradient-white-gold relative overflow-hidden">
+    <section className="py-20 bg-gradient-elegant relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-10 left-10 w-32 h-32 border-2 border-gold/20 rounded-full animate-float" />
       <div className="absolute bottom-10 right-10 w-24 h-24 border-2 border-gold/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
@@ -59,12 +59,12 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <p className="font-body text-sm tracking-luxury text-gold mb-3 uppercase">
-            ✨ Customer Stories ✨
+            💎 Customer Stories 💎
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4">
             <span className="liquid-gold-text">What Our Clients Say</span>
           </h2>
-          <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="font-body text-lg text-charcoal max-w-2xl mx-auto">
             Trusted by thousands of families for over 50 years
           </p>
         </div>
@@ -89,14 +89,14 @@ const Testimonials = () => {
 
             {/* Testimonial Text */}
             <blockquote className="text-center relative z-10">
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-8 italic">
+              <p className="font-body text-lg md:text-xl text-charcoal leading-relaxed mb-8 italic">
                 "{current.text}"
               </p>
 
               {/* Customer Info */}
               <div className="space-y-2">
                 <p className="font-display text-2xl text-gold">{current.name}</p>
-                <p className="font-body text-sm text-foreground/60 tracking-widest uppercase">
+                <p className="font-body text-sm text-charcoal tracking-widest uppercase">
                   {current.location}
                 </p>
                 <div className="inline-block px-4 py-1.5 bg-gradient-gold rounded-full">
@@ -129,22 +129,22 @@ const Testimonials = () => {
         <div className="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-12">
           <div className="text-center">
             <div className="text-3xl font-display text-gold mb-1 animate-fade-in">50+</div>
-            <div className="text-sm font-body text-foreground/60 tracking-widest uppercase">Years Trust</div>
+            <div className="text-sm font-body text-charcoal tracking-widest uppercase">Years Trust</div>
           </div>
           <div className="w-px h-12 bg-gold/30" />
           <div className="text-center">
             <div className="text-3xl font-display text-gold mb-1 animate-fade-in">10,000+</div>
-            <div className="text-sm font-body text-foreground/60 tracking-widest uppercase">Happy Customers</div>
+            <div className="text-sm font-body text-charcoal tracking-widest uppercase">Happy Customers</div>
           </div>
           <div className="w-px h-12 bg-gold/30" />
           <div className="text-center">
             <div className="text-3xl font-display text-gold mb-1 animate-fade-in">100%</div>
-            <div className="text-sm font-body text-foreground/60 tracking-widest uppercase">Certified</div>
+            <div className="text-sm font-body text-charcoal tracking-widest uppercase">Certified</div>
           </div>
           <div className="w-px h-12 bg-gold/30" />
           <div className="text-center">
             <div className="text-3xl font-display text-gold mb-1 animate-fade-in">4.9★</div>
-            <div className="text-sm font-body text-foreground/60 tracking-widest uppercase">Google Rating</div>
+            <div className="text-sm font-body text-charcoal tracking-widest uppercase">Google Rating</div>
           </div>
         </div>
       </div>

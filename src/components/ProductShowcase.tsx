@@ -63,7 +63,7 @@ const ProductShowcase = ({ products }: ProductShowcaseProps) => {
           <p className="font-body text-sm tracking-luxury text-gold mb-4">
             SIGNATURE PIECES
           </p>
-          <h2 className="font-display text-3xl md:text-5xl text-foreground tracking-wide">
+          <h2 className="font-display text-3xl md:text-5xl text-charcoal tracking-wide">
             Exquisite Creations
           </h2>
         </div>
@@ -107,7 +107,7 @@ const ProductShowcase = ({ products }: ProductShowcaseProps) => {
                       <p className="font-body text-xs tracking-wide text-gold mb-1">
                         {product.material}
                       </p>
-                      <p className="font-body text-xs text-muted-foreground">
+                      <p className="font-body text-xs text-charcoal">
                         Available for viewing
                       </p>
                     </div>
@@ -125,10 +125,10 @@ const ProductShowcase = ({ products }: ProductShowcaseProps) => {
 
                 {/* Product Info */}
                 <div className="p-5 text-center">
-                  <p className="font-body text-xs tracking-widest text-muted-foreground mb-2 uppercase">
+                  <p className="font-body text-xs tracking-widest text-charcoal mb-2 uppercase">
                     {product.category}
                   </p>
-                  <h3 className="font-display text-lg text-foreground mb-2 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="font-display text-lg text-charcoal mb-2 group-hover:text-gold transition-colors duration-300">
                     {product.name}
                   </h3>
                   <p className="font-body text-sm text-gold">
@@ -160,7 +160,7 @@ const ProductShowcase = ({ products }: ProductShowcaseProps) => {
             isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <button className="group relative inline-flex items-center gap-3 px-8 py-4 border border-gold/30 text-foreground font-display tracking-wide hover:border-gold/60 transition-all duration-500">
+          <button className="group relative inline-flex items-center gap-3 px-8 py-4 border border-gold/30 text-charcoal font-display tracking-wide hover:border-gold/60 transition-all duration-500">
             <span>View All Pieces</span>
             <span className="animate-[pulse_1.5s_ease-in-out_infinite]">→</span>
             <div className="absolute inset-0 bg-gold/5 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />

@@ -9,6 +9,7 @@ import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import FloatingAssistant from '@/components/FloatingAssistant';
 import AnnouncementBanner from '@/components/AnnouncementBanner';
+import { GarlandDesign, CornerGarland, FloralDivider } from '@/components/GarlandDesign';
 
 // Import images
 import heroImage from '@/assets/hero-jewellery.jpg';
@@ -88,12 +89,41 @@ const Index = () => {
         <AnnouncementBanner />
         <Navbar />
         
-        <main>
+        <main className="relative">
+          {/* Top garland decoration */}
+          <div className="fixed top-0 left-0 right-0 z-30 pointer-events-none">
+            <GarlandDesign position="top" />
+          </div>
+          
+          {/* Corner garlands */}
+          <CornerGarland corner="top-left" size={150} />
+          <CornerGarland corner="top-right" size={150} />
+          
           <HeroSection heroImage={heroImage} />
+          
+          {/* Decorative divider */}
+          <FloralDivider />
+          
           <FeaturedCollections collections={collections} />
+          
+          {/* Decorative divider */}
+          <FloralDivider />
+          
           <ProductShowcase products={products} />
+          
+          {/* Decorative divider */}
+          <FloralDivider />
+          
           <Testimonials />
+          
+          {/* Decorative divider */}
+          <FloralDivider />
+          
           <HeritageSection heritageImage={heritageCraftsman} />
+          
+          {/* Bottom corner garlands */}
+          <CornerGarland corner="bottom-left" size={120} />
+          <CornerGarland corner="bottom-right" size={120} />
         </main>
         
         <Footer />

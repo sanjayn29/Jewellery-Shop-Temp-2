@@ -117,18 +117,18 @@ const HeritageSection = ({ heritageImage }: HeritageSectionProps) => {
               OUR HERITAGE
             </p>
             
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide mb-6">
               A Legacy of <br />
               <span className="italic text-gold-light">Craftsmanship</span>
             </h2>
             
-            <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="font-body text-lg text-charcoal leading-relaxed mb-8">
               For over a century, Maison Élégance has been synonymous with exceptional 
               artistry and uncompromising quality. Our master jewellers, trained in 
               time-honored techniques, bring to life pieces that transcend generations.
             </p>
             
-            <p className="font-body text-lg text-muted-foreground leading-relaxed mb-12">
+            <p className="font-body text-lg text-charcoal leading-relaxed mb-12">
               Each creation begins with a vision and culminates in a masterpiece—
               meticulously handcrafted using only the finest materials and the most 
               precious stones from around the world.
@@ -147,7 +147,7 @@ const HeritageSection = ({ heritageImage }: HeritageSectionProps) => {
                   <p className="font-display text-2xl md:text-3xl text-gold mb-1">
                     {stat.number}
                   </p>
-                  <p className="font-body text-xs tracking-widest text-muted-foreground uppercase">
+                  <p className="font-body text-xs tracking-widest text-charcoal uppercase">
                     {stat.label}
                   </p>
                 </div>

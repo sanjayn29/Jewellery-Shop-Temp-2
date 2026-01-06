@@ -7,66 +7,76 @@
 @layer base {
   :root {
     /* Luxurious white-gold theme */
-    --background: 0 0% 98%;
-    --foreground: 30 5% 15%;
+    --background: 30 8% 94%;
+    --foreground: 0 0% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 5% 15%;
+    --card: 30 5% 97%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 5% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Rich Gold */
-    --primary: 43 80% 58%;
-    --primary-foreground: 0 0% 100%;
+    /* Warm Gold & Orange */
+    --primary: 40 90% 55%;
+    --primary-foreground: 0 0% 5%;
 
-    /* Rose Gold */
-    --secondary: 350 45% 68%;
+    /* Amber Orange */
+    --secondary: 25 95% 53%;
     --secondary-foreground: 0 0% 100%;
 
     /* Elegant Cream Muted */
-    --muted: 40 15% 94%;
-    --muted-foreground: 30 5% 45%;
+    --muted: 30 12% 90%;
+    --muted-foreground: 0 0% 20%;
 
-    /* Platinum Accent */
+    /* Silver Accent */
     --accent: 210 15% 90%;
-    --accent-foreground: 30 5% 15%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 43 25% 85%;
-    --input: 43 20% 92%;
-    --ring: 43 80% 58%;
+    --input: 40 20% 92%;
+    --ring: 43 90% 55%;
 
     --radius: 0.25rem;
 
     /* Custom Luxury Colors */
-    --gold: 43 80% 58%;
-    --gold-light: 45 90% 75%;
-    --gold-dark: 40 70% 45%;
-    --rose-gold: 350 45% 68%;
-    --platinum: 210 15% 90%;
+    --gold: 43 90% 55%;
+    --gold-light: 45 95% 70%;
+    --gold-dark: 40 85% 45%;
+    --amber: 25 95% 53%;
+    --orange: 30 100% 50%;
+    --yellow: 48 98% 60%;
+    --ruby: 0 65% 45%;
+    --ruby-light: 0 70% 60%;
+    --ruby-dark: 0 60% 30%;
+    --crimson: 348 75% 40%;
+    --burgundy: 345 55% 35%;
     --silver: 210 10% 75%;
+    --platinum: 210 15% 90%;
     --diamond: 210 30% 97%;
     --emerald: 145 50% 45%;
     --sapphire: 220 70% 55%;
-    --ruby: 350 75% 55%;
-    --ivory: 40 20% 96%;
-    --cream: 40 30% 94%;
+    --ivory: 30 15% 92%;
+    --cream: 30 20% 90%;
+    --charcoal: 0 0% 8%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43, 80%, 58%), hsl(45, 90%, 75%));
-    --gradient-shimmer: linear-gradient(90deg, transparent, hsl(43, 80%, 58% / 0.5), transparent);
-    --gradient-glass: linear-gradient(135deg, hsl(0, 0%, 100% / 0.8), hsl(0, 0%, 100% / 0.5));
-    --gradient-white-gold: linear-gradient(135deg, hsl(0, 0%, 98%), hsl(43, 80%, 95%));
-    --gradient-silver: linear-gradient(135deg, hsl(210, 10%, 85%), hsl(210, 10%, 95%));
+    --gradient-gold: linear-gradient(135deg, hsl(43, 90%, 55%), hsl(45, 95%, 70%));
+    --gradient-shimmer: linear-gradient(90deg, transparent, hsl(43, 90%, 55% / 0.4), transparent);
+    --gradient-amber: linear-gradient(135deg, hsl(25, 95%, 53%), hsl(40, 90%, 55%));
+    --gradient-festive: linear-gradient(135deg, hsl(48, 98%, 60%), hsl(43, 90%, 55%), hsl(25, 95%, 53%));
+    --gradient-glass: linear-gradient(135deg, hsl(0, 0%, 95% / 0.4), hsl(0, 0%, 90% / 0.3));
+    --gradient-elegant: linear-gradient(135deg, hsl(30, 10%, 92%), hsl(30, 15%, 88%));
+    --gradient-silver: linear-gradient(135deg, hsl(210, 10%, 80%), hsl(210, 10%, 88%));
 
     /* Shadows */
-    --shadow-gold: 0 8px 40px hsl(43, 80%, 58% / 0.25);
-    --shadow-elegant: 0 12px 60px hsl(30, 5%, 15% / 0.15);
-    --shadow-glow: 0 0 80px hsl(43, 80%, 58% / 0.4);
-    --shadow-soft: 0 2px 20px hsl(30, 5%, 15% / 0.08);
+    --shadow-gold: 0 8px 40px hsl(43, 90%, 55% / 0.25);
+    --shadow-elegant: 0 12px 60px hsl(30, 5%, 15% / 0.12);
+    --shadow-glow: 0 0 50px hsl(43, 90%, 55% / 0.3);
+    --shadow-soft: 0 2px 20px hsl(30, 5%, 15% / 0.06);
+    --shadow-amber: 0 8px 40px hsl(25, 95%, 53% / 0.25);
 
     /* Typography */
     --font-display: 'Playfair Display', serif;
@@ -93,9 +103,9 @@
     --card-foreground: 40 10% 95%;
     --popover: 30 8% 15%;
     --popover-foreground: 40 10% 95%;
-    --primary: 43 80% 58%;
+    --primary: 0 65% 45%;
     --primary-foreground: 30 8% 12%;
-    --secondary: 350 45% 68%;
+    --secondary: 345 55% 35%;
     --secondary-foreground: 0 0% 100%;
     --muted: 30 8% 20%;
     --muted-foreground: 40 10% 70%;
@@ -415,8 +425,25 @@
     hsl(var(--gold-dark)),
     hsl(var(--gold)),
     hsl(var(--gold-light)),
+    hsl(var(--yellow)),
+    hsl(var(--gold-light)),
     hsl(var(--gold)),
     hsl(var(--gold-dark))
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: liquid-shimmer 3s ease-in-out infinite;
+}
+
+.liquid-ruby-text {
+  background: linear-gradient(90deg, 
+    hsl(var(--ruby-dark)),
+    hsl(var(--ruby)),
+    hsl(var(--ruby-light)),
+    hsl(var(--ruby)),
+    hsl(var(--ruby-dark))
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
